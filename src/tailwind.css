@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@import 'tailwindcss';
+
+@theme {
+	--font-outfit: 'Outfit', sans-serif;
+}
+
+@layer base {
+	* {
+		@apply font-outfit;
+	}
+}
+
+::-webkit-scrollbar {
+	width: 6px;
+	height: 4px;
+}
+
+::-webkit-scrollbar-track {
+	background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+	@apply bg-zinc-500;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	@apply bg-zinc-400;
+}
